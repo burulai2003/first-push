@@ -1,0 +1,9 @@
+$dark: #252525;
+
+$white: #fff;
+
+@mixin justify-width($space, $size) {
+    display: flex;
+    justify-content: $space;
+    width: $size;
+}

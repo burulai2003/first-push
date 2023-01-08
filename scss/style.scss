@@ -1,0 +1,43 @@
+@import "constants.scss";
+@import "reset.scss";
+
+
+.header {
+    background-color: black;
+
+    .nav {
+        @include justify-width(space-between, 87%);
+
+        padding: {
+            top: 25px;
+            bottom: 25px;
+        }
+
+        ;
+
+        &_logo {
+            color: #fff;
+            font-size: 30px;
+
+        }
+
+        &_navbar {
+            display: flex;
+            @include justify-width(space-between, 60%);
+        }
+    }
+}
+
+.container {
+
+    height: 100px auto;
+
+    @include justify-width(space-around, 60%);
+
+    .col {
+        width: 30%;
+        height: 200px;
+        background-color: $dark;
+    }
+
+}
